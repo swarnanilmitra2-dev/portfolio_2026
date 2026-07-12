@@ -1,0 +1,266 @@
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        body{
+            background-color: rgb(0, 0, 33);
+            color: white;
+            font-family: "Black Ops One", system-ui;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        html{
+             scroll-behavior: smooth;
+        }
+
+        .nav{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 60px;
+            background-color: rgb(9, 9, 69);
+
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        main{
+            padding-top: 100px;
+
+        }
+
+        section{
+             scroll-margin-top: 80px;
+        }
+
+        .nav ul{
+            display: flex;
+            justify-content: center;
+        }
+        .nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+        .nav ul li a{
+           text-decoration: none;
+           color: white;
+        }
+        .nav ul li a:hover{
+            color: rgb(170, 107, 228);
+            font-size: 1.01rem;
+            transform: scale(1.1);
+            transition: 0.5s;
+        }
+        
+        .left{
+            font-size: 1.5rem;
+        }
+        .firstsection{
+            margin : 10% 0;
+            display:flex;
+            justify-content: center;
+            justify-content: space-around;
+        }
+        .leftsection{
+            width: 40%;
+            font-size: 2rem;
+            margin : 25px;
+        }
+        #resume-btn{
+            margin-top: 20px;
+            padding: 10px ;
+            border-radius: 40px;
+            cursor: pointer;
+            background: rgb(170, 107, 228);
+            border: none;
+            color: white;
+        }
+        .rightsection{
+            width: 30%;
+            /* background-color: red; */
+        }
+        .rightsection img{
+            width: 100%;
+        }
+        .purple{
+            color: rgb(170, 107, 228);
+        }
+        #element{
+              color: rgb(170, 107, 228);
+        }
+        .secondSection{
+            height: 100vh;
+            max-width: 80vw;    
+            margin: 110px;
+        
+        }
+        .thirdSection{
+            height: 100vh;
+            max-width: 80vw;    
+            margin: 110px;
+        }
+        .fourthSection{
+            height: 100vh;
+            max-width: 80vw;    
+            margin: 110px;
+        }
+        .fifthSection{
+            height: 100vh;
+            max-width: 80vw;    
+            margin: 110px;
+        }
+
+        .glass-card{
+            height:300px;
+            width:300px;
+            border-radius:20px;
+            overflow:hidden;
+            cursor:pointer;
+
+            background:rgba(255,255,255,.15);
+            backdrop-filter:blur(15px);
+            border:1px solid rgba(255,255,255,.2);
+
+            transition:all .4s ease;
+        }
+
+        .glass-card img{
+            width:100%;
+            height:100%;
+            object-fit:cover;
+            transition:.4s;
+        }
+
+        .glass-card:hover{
+            transform:translateY(-15px) scale(1.05);
+            border-color:rgb(170,107,228);
+            box-shadow:
+                0 0 15px rgb(170,107,228),
+                0 0 35px rgba(170,107,228,.5);
+        }
+
+        .glass-card:hover img{
+            transform:scale(1.01);
+        }
+     
+      
+        .edu_data{
+            display: flex;
+            justify-content: space-around;
+            margin-top: 40px;
+        }
+
+        .glass-card{
+            position: relative;
+            overflow: hidden;
+        }
+
+        .overlay{
+            position: absolute;
+            left:0;
+            bottom:-100%;
+            width:100%;
+            height:100%;
+
+            background: rgba(0,0,0,0.75);
+            color:white;
+
+            display:flex;
+            flex-direction:column;
+            justify-content:center;
+            align-items:center;
+            transition:.5s;
+        }
+
+        .glass-card:hover .overlay{
+            bottom:0;
+        }
+
+        #tenth{
+            height: 300px;
+            width: 300px;
+            border-radius: 20px;
+        }
+        #twelveth{
+            height: 300px;
+            width: 300px;
+            border-radius: 20px;
+        }
+        #college{
+            height: 300px;
+            width: 300px;
+            border-radius: 20px;
+        }
+        .skill-card{
+        --size: 200px;   /* Change only this value */
+
+        width: var(--size);
+        height: var(--size);
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        clip-path: polygon(
+            25% 5%,
+            75% 5%,
+            100% 50%,
+            75% 95%,
+            25% 95%,
+            0% 50%
+        );
+
+        transition: all .4s ease;
+        border: 2px solid rgba(255,255,255,.2);
+        background: rgba(255,255,255,.08);
+        backdrop-filter: blur(12px);
+    }
+    
+    .skill-card img{
+        width: 50%;
+        height: 50%;
+        object-fit: contain;
+    }
+
+    .skill-card:hover{
+       /* transform: scale(1.05);
+       transition: .4s ease; */
+
+        transform: translateY(-10px) scale(1.05);
+
+        background: rgba(170,107,228,.18);
+
+        border-color: rgb(170,107,228);
+
+        box-shadow:
+            0 0 15px rgb(170,107,228),
+            0 0 35px rgba(170,107,228,.5);
+            
+    }
+
+    .web{
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 10px
+    }
+    .lang{
+        display: flex;
+        justify-content: center;
+        justify-content: space-evenly;
+        align-items: center;
+        margin: 0 100px 0px 100px;
+    }
+
+    .skill-wrapper{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        gap: 30px;
+    }
+    
