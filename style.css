@@ -36,7 +36,9 @@
         }
 
         section{
-             scroll-margin-top: 80px;
+            scroll-margin-top: 80px;
+            scroll-behavior: smooth;
+            
         }
 
         .nav ul{
@@ -126,6 +128,7 @@
             background:rgba(255,255,255,.15);
             backdrop-filter:blur(15px);
             border:1px solid rgba(255,255,255,.2);
+            border-radius: 35px;
 
             transition:all .4s ease;
         }
@@ -197,70 +200,45 @@
             width: 300px;
             border-radius: 20px;
         }
-        .skill-card{
-        --size: 200px;   /* Change only this value */
+        .glasspage{
+            margin-top: 50px;
+            display: flex;
+            justify-content: space-around;
+        }
+        .glassbox{
+            margin:20px;
+            margin-top: 40px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .glass-box{
+            display: flex;
+            align-items: center;
 
-        width: var(--size);
-        height: var(--size);
+            width: 250px;
+            height: 65px;
 
-        display: flex;
-        justify-content: center;
-        align-items: center;
+            background: rgba(159, 119, 196, 0.06);
 
-        clip-path: polygon(
-            25% 5%,
-            75% 5%,
-            100% 50%,
-            75% 95%,
-            25% 95%,
-            0% 50%
-        );
+            backdrop-filter: blur(22px);
+            -webkit-backdrop-filter: blur(22px);
 
-        transition: all .4s ease;
-        border: 2px solid rgba(255,255,255,.2);
-        background: rgba(255,255,255,.08);
-        backdrop-filter: blur(12px);
-    }
-    
-    .skill-card img{
-        width: 50%;
-        height: 50%;
-        object-fit: contain;
-    }
+            border-radius: 35px;
 
-    .skill-card:hover{
-       /* transform: scale(1.05);
-       transition: .4s ease; */
+            border: 1px solid rgba(255,255,255,0.12);
 
-        transform: translateY(-10px) scale(1.05);
+            box-shadow:
+                0 8px 30px rgba(0,0,0,.25),
+                inset 0 1px 1px rgba(255,255,255,.15);
 
-        background: rgba(170,107,228,.18);
-
-        border-color: rgb(170,107,228);
-
-        box-shadow:
-            0 0 15px rgb(170,107,228),
-            0 0 35px rgba(170,107,228,.5);
-            
-    }
-
-    .web{
-        display: flex;
-        justify-content: space-evenly;
-        margin-top: 10px
-    }
-    .lang{
-        display: flex;
-        justify-content: center;
-        justify-content: space-evenly;
-        align-items: center;
-        margin: 0 100px 0px 100px;
-    }
-
-    .skill-wrapper{
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-        gap: 30px;
-    }
-    
+            overflow: hidden;
+            position: relative;
+        }
+        #svg{
+            margin-left: 10px;
+            display: flex;
+            width: 65px;
+            height:50px;
+        }
+        
