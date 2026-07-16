@@ -125,7 +125,7 @@
             overflow:hidden;
             cursor:pointer;
 
-            background:rgba(255,255,255,.15);
+            background: rgba(159, 119, 196, 0.06);
             backdrop-filter:blur(15px);
             border:1px solid rgba(255,255,255,.2);
             border-radius: 35px;
@@ -241,4 +241,208 @@
             width: 65px;
             height:50px;
         }
-        
+        .forms{
+            margin-top: 8px;
+            display: flex;
+            justify-content: space-around;
+        }
+        .form-section{
+            width: 350px;
+            height: 350px;
+
+            background: rgba(159, 119, 196, 0.06);
+
+            backdrop-filter: blur(22px);
+            -webkit-backdrop-filter: blur(22px);
+
+            border: 1px solid rgba(255,255,255,0.12);
+            border-radius: 35px;
+
+            box-shadow:
+                0 8px 30px rgba(0,0,0,.25),
+                inset 0 1px 1px rgba(255,255,255,.15);
+
+            position: relative;
+            overflow: hidden;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 10px;
+
+            transition: 0.4s ease;
+        }
+
+        /* Optional Hover Effect */
+        .form-section:hover{
+            transform: scale(1.05);
+
+            border-color: rgba(255,255,255,0.18);
+
+            box-shadow:
+                0 18px 45px rgba(0,0,0,.35),
+                inset 0 1px 1px rgba(255,255,255,.2);
+        }
+        .form-box{
+             display: flex;
+            align-items: center;
+
+            width: 300px;
+            height: 65px;
+
+            background: rgba(159, 119, 196, 0.06);
+
+            backdrop-filter: blur(22px);
+            -webkit-backdrop-filter: blur(22px);
+
+            border-radius: 35px;
+
+            border: 1px solid rgba(255,255,255,0.12);
+
+            box-shadow:
+                0 8px 30px rgba(0,0,0,.25),
+                inset 0 1px 1px rgba(255,255,255,.15);
+
+            overflow: hidden;
+            position: relative;
+        }
+        .form-section{
+
+                display:flex;
+                flex-direction:column;
+                justify-content:center;
+                gap:20px;
+
+                padding:35px;
+            }
+
+            /* Social Card */
+
+            .social-card{
+
+                width: 300px;
+                display:flex;
+                align-items:center;
+                justify-content: center;
+                gap:22px;
+
+                padding:15px 22px;
+
+                background:rgba(255,255,255,.05);
+
+                border:1px solid rgba(255,255,255,.08);
+
+                border-radius:18px;
+
+                overflow:absolute;
+
+                opacity:100;
+
+            }
+            .social-card:hover{
+
+                transform:translateX(8px);
+
+                background:rgba(159,119,196,.18);
+
+                border-color:#9F77C4;
+
+                box-shadow:0 0 20px rgba(159,119,196,.25);
+
+            }
+
+            /* Logo */
+
+            .consvg{
+
+                width:50px;
+                height:50px;
+
+                transition:.4s;
+
+                filter:
+                    brightness(.95)
+                    drop-shadow(0 0 8px rgba(159,119,196,.45));
+
+            }
+
+            .social-card:hover .consvg{
+
+                transform:scale(1.12) rotate(-6deg);
+
+                filter:
+                    brightness(1.2)
+                    drop-shadow(0 0 15px rgba(159,119,196,.8));
+
+            }
+
+            /* Text */
+
+            .social-info{
+
+                display:flex;
+                flex-direction:column;
+
+            }
+
+            .social-info h3{
+
+                color:#fff;
+
+                font-size:18px;
+
+                margin-bottom:5px;
+
+            }
+
+            .social-info a{
+
+                color:#9F77C4;
+
+                text-decoration:none;
+
+                font-size:14px;
+
+                transition:.3s;
+
+            }
+
+            .social-info a:hover{
+
+                color:#ffffff;
+
+            }
+            /* .form{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            } */
+            #putin{
+                margin:0;
+                padding:0;
+                height: 175px;
+                width: 175px;
+                border-radius: 50%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+            .contactme{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .masterinputbox{
+                display:flex;
+                flex-direction: column;
+                gap: 8px; 
+                text-size-adjust: calc(24);
+            }
+            .input-message{
+                /* height: 10px;
+                width:15px; */
+                display: flex;
+            }
