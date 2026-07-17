@@ -18,7 +18,6 @@
       e.preventDefault();
 
       const formData = new FormData(form);
-      formData.append("access_key", "f56d708a-ab44-455d-8162-e4f2b6379a38");
 
       const originalText = submitBtn.textContent;
 

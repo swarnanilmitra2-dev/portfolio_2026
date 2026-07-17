@@ -40,7 +40,7 @@
             scroll-behavior: smooth;
             
         }
-
+        
         .nav ul{
             display: flex;
             justify-content: center;
@@ -440,34 +440,145 @@
                 width:15px; */
                 display: flex;
             }
+            /* ===========================
+                    PROFESSIONAL FOOTER
+            =========================== */
+
             .footer{
-                height: 150px;
-                width: 100%;
-                background-color: rgb(19, 29, 63);
-                font-style: none;
-            }
-            .lefts{
-                font-weight: 300;
-                font-style: none;
+                width:100%;
+                background:linear-gradient(180deg,#11184a,#090921);
+                border-top:2px solid rgba(170,107,228,.4);
+                padding-top:50px;
+                margin-top:80px;
             }
 
             .lastsection{
-                display: flex;
-                justify-content: space-around;
+                width:90%;
+                max-width:1200px;
+                margin:auto;
+
+                display:flex;
+                justify-content:space-between;
+                align-items:flex-start;
+                gap:80px;
+                padding-bottom:40px;
             }
-            .blacknwhite{
-                display: flex;
-                flex-direction: column;
-                height: 20px;
-                width: 20px;
+
+            .lefts,
+            .right{
+                flex:1;
             }
+
+            .lefts h3,
+            .right h3{
+                color:rgb(170,107,228);
+                font-size:24px;
+                margin-bottom:20px;
+                letter-spacing:1px;
+            }
+
+            .lefts ul{
+                list-style:none;
+            }
+
+            .lefts ul li{
+                margin:15px 0;
+            }
+
+            .lefts ul li a{
+                color:#ffffff;
+                text-decoration:none;
+                font-size:17px;
+                transition:.35s;
+            }
+
+            .lefts ul li a:hover{
+                color:rgb(170,107,228);
+                padding-left:12px;
+            }
+
+            .right{
+                display:flex;
+                flex-direction:column;
+            }
+
+            .right img{
+                width:42px;
+                height:42px;
+                margin:10px 0;
+                cursor:pointer;
+                transition:.4s;
+                filter:grayscale(100%);
+            }
+
+            .right img:hover{
+                transform:translateX(8px) scale(1.15);
+                filter:grayscale(0%);
+            }
+
             .down{
-                height: 50px;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                margin-top: 30px;
-                background-color: black;
+                border-top:1px solid rgba(255,255,255,.08);
+
+                display:flex;
+                justify-content:center;
+                align-items:center;
+
+                padding:22px;
+
+                background:#050511;
+
+                text-align:center;
+            }
+
+            .down h3{
+                font-size:15px;
+                font-weight:400;
+                letter-spacing:1px;
+                color:#bfbfbf;
+            }
+
+            /* ===========================
+                TABLET
+            =========================== */
+
+            @media(max-width:992px){
+
+                .lastsection{
+                    gap:40px;
+                }
+
+}
+
+            /* ===========================
+                MOBILE
+            =========================== */
+
+            @media(max-width:768px){
+
+                .lastsection{
+                    flex-direction:column;
+                    align-items:center;
+                    text-align:center;
+                    gap:45px;
+                }
+
+                .lefts ul li a:hover{
+                    padding-left:0;
+                }
+
+                .right{
+                    align-items:center;
+                }
+
+                .right img{
+                    margin:8px;
+                }
+
+                .down h3{
+                    font-size:13px;
+                    line-height:22px;
+                }
+
             }
             .upcoming{
                 display: flex;
