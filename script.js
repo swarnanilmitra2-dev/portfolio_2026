@@ -53,18 +53,18 @@
 
    const card = document.getElementById("upcomingCard");
 
-const observer = new IntersectionObserver((entries) => {
+   const observer = new IntersectionObserver((entries) => {
 
-    entries.forEach(entry => {
+      entries.forEach(entry => {
 
-        if(entry.isIntersecting){
-            card.classList.add("show");
-        }
+         if(entry.isIntersecting){
+               card.classList.add("show");
+         }
 
-    });
+      });
 
-}, {
-    threshold: 0.4
-});
+   }, {
+      threshold: 0.4
+   });
 
-observer.observe(card);
+   observer.observe(card);
